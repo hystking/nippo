@@ -15,7 +15,6 @@ HTML=public/index.html
 TEMPLATE=templates/nippo.md
 
 if ! test -e $MD; then
-  echo "do not exist"
   sed -e "s/YEAR/$YEAR/" -e "s/MONTH/$MONTH/" -e "s/DAY/$DAY/" $TEMPLATE > $MD
 fi
 
