@@ -1,0 +1,16 @@
+{
+  "name": "nippou-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./new.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.8.5",
+    "marked": "^0.3.5"
+  }
+}
