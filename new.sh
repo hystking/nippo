@@ -1,6 +1,6 @@
 #!/bin/bash
-
 set -e
+SCRIPT_DIR=`dirname $0`
 
 EDITOR=vim
 
@@ -9,10 +9,10 @@ MONTH=`date +%m`
 DAY=`date +%d`
 DATE=$YEAR-$MONTH-$DAY
 
-MD=mds/$DATE.md
-CSS=templates/style.css
-HTML=public/index.html
-TEMPLATE=templates/nippo.md
+MD=$SCRIPT_DIR/mds/$DATE.md
+CSS=$SCRIPT_DIR/templates/style.css
+HTML=$SCRIPT_DIR/public/index.html
+TEMPLATE=$SCRIPT_DIR/templates/nippo.md
 
 if ! test -e $MD; then
   sed -e "s/YEAR/$YEAR/" -e "s/MONTH/$MONTH/" -e "s/DAY/$DAY/" $TEMPLATE > $MD
