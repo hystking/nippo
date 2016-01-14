@@ -20,7 +20,7 @@ fi
 
 $EDITOR $MD
 
-read -p "Show Compiled HTML? [yes]: " yn
+read -p "Open browser? [yes]: " yn
 
 if test "$yn" = "yes"; then
   COMPILED=`marked $MD`
