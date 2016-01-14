@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./new.sh"
+    "start": "./edit.sh",
+    "show": "./show.sh"
   },
   "keywords": [],
   "author": "",
