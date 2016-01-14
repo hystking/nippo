@@ -19,7 +19,12 @@ if ! test -e $MD; then
 fi
 
 $EDITOR $MD
+
+read -p "Show Compiled HTML? [yes]: " yn
+test "$yn" = "yes"
+
 COMPILED=`marked $MD`
 INLINE_CSS=`cat $CSS`
 echo "<!DOCTYPE html><html><head><style>$INLINE_CSS</style><title>Nippo</title></head><body>$COMPILED</body></html>" > $HTML
+
 http-server -o
