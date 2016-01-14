@@ -4,7 +4,7 @@ set -e
 SCRIPT_DIR=`dirname $0`
 DATE=`$SCRIPT_DIR/date.sh`
 
-MD=$SCRIPT_DIR/mds/$DATE.md
+MD=$SCRIPT_DIR/log/$DATE.md
 CSS=$SCRIPT_DIR/templates/style.css
 HTML=$SCRIPT_DIR/public/index.html
 
