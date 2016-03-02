@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-date +%Y-%m-%d
+date -j -v-6H +%Y-%m-%d
